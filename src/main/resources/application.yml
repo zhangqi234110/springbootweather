@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    check-template-location: true
+    suffix: .html
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    mode: HTML5
+    cache: false
+
+server:
+  port: 8080
+
+#使用的是聚合数据api，先要注册帐号，然后申请需要的第三方服务
+juhe:
+  weather:
+    Appkey: 8a8b93293158961596749bb01b7ab2c0  #在个人中心查看申请的天气appkey
